@@ -1,0 +1,259 @@
+body {
+    font-family: sans-serif, 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.container {
+max-width: 1140px;
+margin: auto;
+max-height: max-content;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
+
+/* header */
+.header__cont {
+    width: 100%;
+margin-bottom: 5%;
+max-height: max-content;
+background-color: #6ACCCB;
+    height: 70px;
+
+}
+.header {
+    background-color: #6ACCCB;
+    width: 1140px;
+   display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    margin:auto;
+    box-sizing: border-box;
+    height: 70px;
+
+}
+.logo {
+    width: 64px;
+    height: 57px;
+    position: relative;
+}
+.name-logo {
+    font-family:'Pacifico', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: #434343;
+    margin-left: 2%;
+}
+
+/* content */
+.main {
+    margin-bottom: -3%;
+}
+.content {
+    margin: auto;
+    height: 65vh;
+    max-width: 90vw;
+    width: 85vw;
+} 
+.reg-name {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Open sans', sans-serif;
+    line-height: 2;
+    color: #434343;
+    margin-top: -10%;
+}
+.forma {
+    padding-top: 5%;
+}
+.forma-regist {
+    margin: auto;
+    max-width: 960px;
+    width: 470px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #DDDDDD;
+    background-color: whitesmoke;
+}
+.text-forma {
+    width: 350px;
+    height: 55px;
+    margin-bottom: 10%;
+    border: 1px #DDDDDD solid;
+    padding-left: 3%;
+    background-color: white;
+    padding-top: 2%;
+}
+input::placeholder, .button, .text_regist {
+    color: darkgrey;
+    font-size: 14px;
+    line-height: 2;
+    font-family: 'Open sans', sans-serif;
+}
+.text_regist {
+    color: #434343;
+    margin-bottom: 2%;
+}
+.button {
+    width: 340px;
+    height: 40px;
+    border: none;
+    background-color: #6BCDFD;
+    color: white;
+    border-radius: 2%;
+    margin-top: 10%;
+}
+ /* footer */
+
+ .footer {
+    position : fixed;
+    height : 50px;
+    bottom : 0;
+    width: 100%;
+}
+.footer_menu {
+    width: 100%;
+}
+.list_foot { 
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+.footer_content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+    display: grid;
+}
+.link_foot {
+    text-decoration: none;
+    font-family: sans-serif, 'Open Sans';
+    color: #292929;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .content {
+        width: 60vw;
+    }
+    .header {
+        width: 750px;
+    }
+    .forma-regist {
+        width: 470px;
+        margin: auto;
+        height: 710px;
+    }
+    .reg-name {
+        margin-top: -10px;
+    }
+    .text_regist {
+        margin-bottom: 2%;
+    }
+    .text-forma {
+        width: 295px;
+        margin-bottom: 10%;
+        padding-top: 2%;
+    }
+    .button {
+        width: 275px;
+        margin-top: 10%;
+    }
+    .link_foot {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container, .header, .forma-regist,  {
+        max-width: 740px;
+        width: 90%;
+    }
+    .content {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container, .header, .content {
+        max-width: 540px;
+    } 
+    .content {
+        width: 100%;
+    }
+    .forma-regist {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 578px) and (max-height: 823px) {
+    .container, .header {
+        max-width: 90%;
+    }
+    .text-forma, .forma-regist {
+        width: 100%;
+        height: 100%;
+}
+.content {
+    max-width: 90%;
+    width: 95%;
+    height: 90%;
+}
+.reg-name {
+    margin-top: 2%;
+}
+.text-forma {
+    height: 40px;
+}
+.reg-name {
+    font-size: 24px;
+}
+.forma {
+    padding-top: 3%;
+}
+.button {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 4%;
+    height: 40px;
+}
+/*footer*/
+.footer {
+    bottom: unset;
+    width: 95%;
+    position: unset;
+    margin: auto;
+    height: 70%;
+    margin-top: 3%;
+}
+.footer_menu {
+    width: 100%;
+}
+.list_foot {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    justify-content: center;
+}
+.li_footer {
+    margin: 1% 2% 2% 2%;
+}
+.link_foot {
+    font-size: 14px;
+}
+}

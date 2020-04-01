@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale= 1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Animal</title>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <header>
+        <div id="header-demo">
+            <header-component></header-component>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                
+                <!-- Форма для регистрации-->
+                <div class="forma-regist">
+                    <h1 class="reg-name"> Регистрация </h1>
+                    <h2 class="text_regist"> Введите свои данные: </h2>
+                <form class="forma">
+                    <div class="name_user">
+                    <label class="name">
+                        <input type="text" name="username" class="text-forma" placeholder="Имя и Фамилия" maxlength="75">
+                    </label>
+                </div>
+                <div class="login-user">
+                    <label class="user-login">
+                        <input type="text" name="login" class="text-forma" placeholder="Логин" maxlength="35">
+                    </label>
+                </div>
+                <div class="user-mail">
+                    <label class="mails">
+                        <input class="text-forma" type="text" name="E-mail" placeholder="E-mail" maxlength="75">
+                    </label>
+                </div>
+                <div class="password-user">
+                    <label class="user_pas">
+                        <input class="text-forma" name="password" type="password" placeholder="Пароль" maxlength="75">
+                    </label>
+                </div>
+                <div class="repeat">
+                    <label class="rep-pas">
+                        <input class="text-forma" name="repeat_password" type="password" placeholder="Повторите пароль" maxlength="75">
+                    </label>
+                </div>
+                </form>
+                <div class="button_regist">
+                <button class="button"> Зарегистрироваться </button>
+                </div>
+            </div>
+        </div>
+       </div>
+    </main>
+    <footer class="footer">
+       <div id="footer-demo">
+           <footer-component></footer-component>
+       </div>
+    <body>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.25/vue.min.js"></script>
+    <script src="./js/main_vue.js"></script>
+   </footer>
+    </body>
+</html>
